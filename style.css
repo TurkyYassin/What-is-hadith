@@ -220,6 +220,57 @@
     #navbar .start a:hover{
       background: #F84D07;
     }
+    /* Responsive Start */
+  @media (max-width: 1024px) {
+    #navbar img {
+      margin-left: 20px;
+    }
+    #navbar .search{
+      display: none;
+    }
+  
+    #navbar ul {
+      margin-right: 20px;
+    }
+  
+    #navbar ul li a {
+      padding: 10px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    #navbar {
+      flex-direction: column;
+    }
+
+    #navbar img {
+      margin-bottom: 20px;
+      margin-top: 20px;
+      margin-left: -200px;
+    }
+
+    #navbar .search{
+      display: none;
+    }
+    #navbar .login{
+      /* display: none; */
+      position: absolute;
+      top: 30px;
+      right: 100px;
+    }
+    #navbar .start{
+      display: none;
+    }
+  
+    #navbar ul {
+      margin-right: 40px;
+    }
+  
+    #navbar ul li a {
+      padding: 10px;
+      z-index: 999;
+    }
+  }
   
   /* Header End */
 
@@ -365,6 +416,75 @@
     .end button:hover{
         background: #F84D07;
     }
+    @media (max-width: 1024px){
+      .img img{
+        margin-left: 120px;
+        border-radius: 20px;
+      }
+      .content{
+        margin-left:120px ;
+        width: 80%;
+      }
+      .content p{
+        font-size: 22px;
+        line-height: 40px;
+      }
+      .content h2{
+        font-size: 30px;
+      }
+      .best .flex{
+        margin-left: -150px;
+        padding: 10px;
+      }
+      .end{
+        width: 100%;
+        margin-left: 50px;
+        display: flex;
+        justify-content: space-around;
+      }
+      .end button{
+        margin-left: -100px;
+      }
+    }
+    @media (max-width: 600px){
+      .img img{
+        width: 350px;
+        margin-left: 20px;
+        border-radius: 20px;
+      }
+      .content{
+        margin-left:20px ;
+        width: 85%;
+      }
+      .content p{
+        font-size: 18px;
+        line-height: 30px;
+      }
+      .content h2{
+        font-size: 25px;
+      }
+      .best .bes{
+        margin-left: -70px;
+      }
+      .best .flex{
+        flex-direction: column;
+        margin-left: -15px;
+        padding: 10px;
+      }
+      .end{
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
+      .end .social-links{
+        margin-left: -90px;
+        margin-bottom: 20px;
+      }
+      .end button{
+        margin-left: -90px;
+      }
+    }
 
   /* blog END */
 
@@ -471,13 +591,12 @@
 
 
 /*responsive*/
-@media(max-width: 767px){
+@media(max-width: 1024px){
   .footer-col{
-    width: 50%;
     margin-bottom: 30px;
 }
 }
-@media(max-width: 574px){
+@media(max-width: 600px){
   .footer-col{
     width: 100%;
 } 
